@@ -35,5 +35,14 @@ export class ShoppingListService {
     this.ingredients[index] = newIngredient;
     this.ingredientsChanged.next(this.ingredients.slice());
   }
+
+
+  // TODO
+  // Remove ingredient helemaal werkend krijgen
+  removeIngredient(index: number){
+    console.log(this.ingredients);
+    const newIngredienstlist = this.ingredients.splice(index, 1);
+    console.log(newIngredienstlist);
+  }
   
 }
