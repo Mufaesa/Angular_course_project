@@ -54,5 +54,4 @@ export class RecipeService {
     this.recipes.splice(index, 1);
     this.recipesChanges.next(this.recipes.slice());
   }
-
 }
