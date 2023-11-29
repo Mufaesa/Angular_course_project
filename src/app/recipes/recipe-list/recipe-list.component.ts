@@ -10,12 +10,17 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-
   recipes: Recipe[];
 
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
+    this.recipeService.recipesChanges
+      .subscribe(
+        (recipes: Recipe[]) => {
+          this.recipes = recipes;
+        }
+      )
     this.recipes = this.recipeService.getRecipes();
   }
 }
