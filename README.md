@@ -35,3 +35,8 @@ Bootstrap
 * Lifecycle Hooks
 * Event emitters
 * Input / Output
+* Angular routing
+* Routing authentication
+* Services
+* Template driven forms
+* Reactive forms
