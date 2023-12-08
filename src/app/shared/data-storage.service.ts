@@ -7,7 +7,7 @@ import { Recipe } from '../recipes/recipe.model';
 
 @Injectable()
 export class DataStorageService {
-    firebaseUrl: string = "https://ng-complete-guide-5f905-default-rtdb.europe-west1.firebasedatabase.app/";
+    firebaseUrl: string = "YOUR_FIREBASE_URL";
 
     constructor(private http: HttpClient,
                 private recipeService: RecipeService) {}
