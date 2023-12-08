@@ -40,3 +40,5 @@ Bootstrap
 * Services
 * Template driven forms
 * Reactive forms
+* HTTP calls
+* Firebase
