@@ -36,9 +36,15 @@ Bootstrap
 * Event emitters
 * Input / Output
 * Angular routing
-* Routing authentication
+* Routing interceptors
 * Services
+* Rxjs operators
 * Template driven forms
 * Reactive forms
-* HTTP calls
 * Firebase
+* HTTP calls
+* HTTP headers
+* HTTP params
+* HTTP authentication
+* HTTP error handling
+* Localstorage usage
