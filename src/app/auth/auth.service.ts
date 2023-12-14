@@ -21,8 +21,8 @@ export class AuthService {
     constructor(private http: HttpClient) {}
 
     apiKey: string = "AIzaSyDj6PIB2MOoADwJBcRz3QYYyCu4RG5OIv8";
-    signUpUrl: string = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + this.apiKey;
-    logInUrl: string = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + this.apiKey;
+    signUpUrl: string = "YOUR_SIGNUP_URL" + this.apiKey;
+    logInUrl: string = "YOUR_LOGIN_URL" + this.apiKey;
     
     signUp(email: string, password: string){
         return this.http.post<AuthResponseData>(
@@ -30,7 +30,7 @@ export class AuthService {
             {
                 email: email,
                 password: password,
-                returnSecureToke: true
+                returnSecureToken: true
             }
         )
         .pipe(
@@ -52,7 +52,7 @@ export class AuthService {
             {
                 email: email,
                 password: password,
-                returnSecureToke: true
+                returnSecureToken: true
             }
         )
         .pipe(
@@ -68,7 +68,12 @@ export class AuthService {
         );
     }
 
-    private handleAuthentication(email: string, userId: string, token: string, expiresIn: number){
+    private handleAuthentication(
+        email: string, 
+        userId: string, 
+        token: string, 
+        expiresIn: number
+    )   {
         const expirationDate = new Date(new Date().getTime() + expiresIn * 1000);
         const user = new User(
             email, 
