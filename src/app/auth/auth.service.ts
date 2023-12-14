@@ -22,7 +22,7 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  apiKey: string = 'AIzaSyDj6PIB2MOoADwJBcRz3QYYyCu4RG5OIv8';
+  apiKey: string = 'YOUR_API_KEY';
   signUpUrl: string = 'YOUR_SIGNUP_URL?key=' + this.apiKey;
   logInUrl: string = 'YOUR_LOGIN_URL?key=' + this.apiKey;
 
