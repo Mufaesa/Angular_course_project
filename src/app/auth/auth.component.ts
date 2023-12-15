@@ -52,7 +52,7 @@ export class AuthComponent {
     form.reset();
   }
 
-  login(email: string, password: string){
-
+  onHandleErrorScreen(){
+    this.error = null;
   }
 }
