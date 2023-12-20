@@ -22,9 +22,13 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  apiKey: string = 'YOUR_API_KEY';
-  signUpUrl: string = 'YOUR_SIGNUP_URL?key=' + this.apiKey;
-  logInUrl: string = 'YOUR_LOGIN_URL?key=' + this.apiKey;
+  apiKey: string = 'AIzaSyDj6PIB2MOoADwJBcRz3QYYyCu4RG5OIv8';
+  signUpUrl: string =
+    'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' +
+    this.apiKey;
+  logInUrl: string =
+    'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' +
+    this.apiKey;
 
   signUp(email: string, password: string) {
     return this.http

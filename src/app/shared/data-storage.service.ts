@@ -5,7 +5,7 @@ import { map, tap } from 'rxjs/operators';
 
 import { Recipe } from '../recipes/recipe.model';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class DataStorageService {
   firebaseUrl: string =
     'https://ng-complete-guide-5f905-default-rtdb.europe-west1.firebasedatabase.app/';
