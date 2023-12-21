@@ -41,10 +41,12 @@ Bootstrap
 * Rxjs operators
 * Template driven forms
 * Reactive forms
-* Firebase
 * HTTP calls
 * HTTP headers
 * HTTP params
 * HTTP authentication
 * HTTP error handling
 * Localstorage usage
+* Dynamic components
+* Lazyloading
+* Pre-loading
